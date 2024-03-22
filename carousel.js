@@ -6,7 +6,6 @@
  *
  * @author  Rahul C.
  * @link    https://github.com/c99rahul/js-carousel
- * @param   {*} param0
  * @param   {Object} config - Configuration options for the carousel.
  * @param   {string} config.carouselSelector - CSS selector for the carousel container element.
  * @param   {string|null} [config.slideSelector=null] - CSS selector for the individual slide elements within the carousel.
