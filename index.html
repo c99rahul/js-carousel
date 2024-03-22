@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .site-container {
+        max-width: 800px;
+        margin: 3em auto;
+        padding: 2em;
+      }
+
+      .demo-title {
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      .carousel + .carousel {
+        margin-top: 4em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="site-container">
+      <h1 class="demo-title">JavaScript Carousels</h1>
+      <div
+        id="carousel-1"
+        class="carousel"
+        role="region"
+        aria-labelledby="carousel-1-title"
+      >
+        <h2 class="carousel-title" id="carousel-1-title">
+          Beautiful Landscapes
+        </h2>
+        <p class="carousel-description">
+          An autoplaying carousel of landscapes with pagination enabled
+        </p>
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-1-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-1-title">Nanda Kot peak</h3>
+              <p>Mukteshwar, Uttarakhand</p>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/gkIXFjDRyDc/1600x700"
+              alt="Nanda Kot peak"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-2-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-2-title">Manali Mountains</h3>
+              <p>Manali, Himachal Pradesh</p>
+            </div>
+            <img
+              src="https://source.unsplash.com/oIXJ839p55k/1600x700"
+              alt="Manali Mountains"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-3-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-3-title">Aotearoa</h3>
+              <p>New Zealand</p>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/MlWRXR18fAg/1600x700"
+              alt="Aotearoa"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-4-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-4-title">Richmond Park</h3>
+              <p>London, England</p>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/jlVEj8IDPQc/1600x700"
+              alt="London’s Richmond Park"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="carousel-2"
+        class="carousel"
+        role="region"
+        aria-labelledby="carousel-1-title"
+      >
+        <h2 class="carousel-title" id="carousel-2-title">Delicious food</h2>
+        <p class="carousel-description">
+          An carousel of some food items with pagination and autoplaying
+          disabled
+        </p>
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-2-slide-1-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-2-slide-1-title">Red Curry</h3>
+              <p>
+                Clicked by
+                <a
+                  href="https://unsplash.com/photos/flat-lay-photography-of-vegetable-soup-on-white-ceramic-cup-XoByiBymX20"
+                  >Emy</a
+                >
+              </p>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/XoByiBymX20/1600x700"
+              alt="Red Curry"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-2-slide-2-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-2-slide-2-title">Steamed dumplings</h3>
+              <p>
+                Clicked by
+                <a
+                  href="https://unsplash.com/photos/three-white-dimsum-on-brown-bowl-D-vDQMTfAAU"
+                  >Charles Deluvio</a
+                >
+              </p>
+            </div>
+            <img
+              src="https://source.unsplash.com/D-vDQMTfAAU/1600x700"
+              alt="Steamed dumplings"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-2-slide-3-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-2-slide-3-title">Salmon, veggies, and quinoa</h3>
+              <p>
+                Clicked by
+                <a
+                  href="https://unsplash.com/photos/broccoli-with-meat-on-plate-mmnKI8kMxpc"
+                  >Ella Olsson</a
+                >
+              </p>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/mmnKI8kMxpc/1600x700"
+              alt="Salmon, veggies, and quinoa"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="carousel-3"
+        class="carousel"
+        role="region"
+        aria-labelledby="carousel-3-title"
+      >
+        <h2 class="carousel-title" id="carousel-3-title">Random Images</h2>
+        <p class="carousel-description">
+          A carousel of many random images to demonstrate a lot of pagination
+          items
+        </p>
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-1-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-1-title">A random fruit</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?fruit"
+              alt="Fruit"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-2-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-2-title">A random building</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?building"
+              alt="Building"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-3-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-3-title">A random river</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?river"
+              alt="River"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-4-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-4-title">A random tree</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?tree"
+              alt="Tree"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-5-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-5-title">A random mountain</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?mountain"
+              alt="Mountain"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-6-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-6-title">A random animal</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?animal"
+              alt="Animal"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-7-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-7-title">A random car</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?car"
+              alt="Car"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-8-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-8-title">A random vegetable</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?vegetable"
+              alt="Vegetable"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-9-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-9-title">A random street</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?street"
+              alt="Street"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-3-slide-10-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-3-slide-10-title">A random tattoo</h3>
+            </div>
+
+            <img
+              src="https://source.unsplash.com/random/1600x700/?tattoo"
+              alt="Tattoo"
+              width="800"
+              height="350"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="carousel.js"></script>
+    <script>
+      const carousel1 = JSCarousel({
+        carouselSelector: "#carousel-1",
+        slideSelector: ".slide",
+        enablePagination: true,
+      });
+
+      carousel1.create();
+
+      const carousel2 = JSCarousel({
+        carouselSelector: "#carousel-2",
+        slideSelector: ".slide",
+        enablePagination: false,
+        enableAutoplay: false,
+      });
+
+      carousel2.create();
+
+      const carousel3 = JSCarousel({
+        carouselSelector: "#carousel-3",
+        slideSelector: ".slide",
+      });
+
+      carousel3.create();
+
+      window.addEventListener("unload", () => {
+        carousel1.destroy();
+        carousel2.destroy();
+      });
+    </script>
+  </body>
+</html>
