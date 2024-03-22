@@ -1,3 +1,20 @@
+/**
+ * JavaScript Carousel
+ *
+ * This is a simple customizable carousel built with plain JavaScript,
+ * which can be your starting point to build your own carousel solution.
+ *
+ * @author  Rahul C.
+ * @link    https://github.com/c99rahul/js-carousel
+ * @param   {*} param0
+ * @param   {Object} config - Configuration options for the carousel.
+ * @param   {string} config.carouselSelector - CSS selector for the carousel container element.
+ * @param   {string|null} [config.slideSelector=null] - CSS selector for the individual slide elements within the carousel.
+ * @param   {boolean} [config.enableAutoplay=true] - Whether to enable autoplay for the carousel.
+ * @param   {number|null} [config.autoplayInterval=2000] - Autoplay interval in milliseconds.
+ * @param   {boolean} [config.enablePagination=true] - Whether to enable pagination for the carousel.
+ * @returns {JSCarousel} Am instance of JSCarousel.
+ */
 const JSCarousel = ({
   carouselSelector,
   slideSelector = null,
