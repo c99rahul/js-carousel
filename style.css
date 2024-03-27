@@ -19,6 +19,7 @@
   --carousel-pagination-btn-active-bg: #333;
 }
 
+/* Box-sizing reset */
 *,
 *::before,
 *::after {
